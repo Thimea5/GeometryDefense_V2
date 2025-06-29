@@ -1,0 +1,162 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Assure que la hauteur de la page couvre toute la fenêtre */
+  color: #FFFFFF;
+}
+
+canvas {
+  display: block;
+}
+
+#updateLvl {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color:rgba(100, 120, 160, 0.9);
+  color: white;
+  padding: 20px;
+  font-size: 24px;
+  text-align: center;
+  border-radius: 10px;
+  font-family: 'Shadows Into Light Two', cursive;
+  z-index: 10;
+  border:2px solid;
+  border-color : rgba(200, 200, 200);
+}
+
+.improvement:hover {
+  cursor : pointer;
+  color: rgba(255, 100, 100);
+}
+
+
+#pauseBtn{
+  color: white;
+}
+
+#menu {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  background-color: black;
+  height: 100vh; 
+  width: 100vw; 
+  color: #FFFFFF;
+}
+
+#difficultyMenu {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  background-color: black;
+  height: 100vh; 
+  width: 100vw; 
+  color: #FFFFFF;
+}
+
+.btn {
+  color:white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 7px 13px; 
+  font-size: 1.5em;
+  background-color:rgba(100, 120, 160);
+  border-radius: 15px;
+  box-shadow: 2px 2px 4px #444444;
+  cursor: pointer;
+  margin:2vh;
+
+}
+
+.btn:hover {
+  background-color: #dfdfdf;
+}
+
+
+.shadows-into-light-two-regular {
+  font-family: "Shadows Into Light Two", cursive;
+  font-weight: 1000;
+  font-style: normal;
+}
+
+#parameters{
+  background-color: black;
+  height: 100vh; 
+  width: 100vw; 
+  display: none;
+}
+
+#volume{
+  position: absolute;
+  top: 42%;
+  left: 20%;
+  font-family: "Shadows Into Light Two", cursive;
+  font-size: 27px;
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  #volume {
+    left: 35%;
+  }
+}
+
+@media (max-width: 768px) { 
+  #volume {
+    font-size: 20px;
+    left: 5%;
+  }
+}
+
+#retour{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  font-family: "Shadows Into Light Two", cursive;
+  font-size: 27px;
+  display: none;
+}
+
+#footer{
+  position: absolute;
+  bottom:25px;
+  right: 50px;
+  font-family: "Arial";
+}
+
+#loading{
+  position:absolute;
+  top:40%;
+  left:45%;
+  color: black;
+  font-size: 45px;
+  font-family: "Shadows Into Light Two", cursive;
+}
+
+#lose{
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  background-color: black;
+  height: 100vh; 
+  width: 100vw; 
+  color: #FFFFFF;
+  font-family: "Shadows Into Light Two", cursive;
+
+}
+
+#win{
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  background-color: black;
+  height: 100vh; 
+  width: 100vw; 
+  color: #FFFFFF;
+  font-family: "Shadows Into Light Two", cursive;
+
+}

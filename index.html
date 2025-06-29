@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <h1 id="loading">Loading...</h1>
+      <div class="shadows-into-light-two-regular" id ="menu" hidden>
+        <h1>Geometry Defense</h1>
+        <h2>Survis le plus longtemps en tuant tes ennemis</h2>
+        <h3>Tu peux controler ta tourelle en cliquant sur l'écran</h3>
+        <button class = "btn " id="playButton">Jouer</button>
+        <button class = "btn" id="parametersButton">Paramètres</button>
+      </div>
+      
+      <div class="shadows-into-light-two-regular" id ="difficultyMenu" hidden>
+        <h1>Choix du mode de jeu</h1>
+        <button class = "difficultyBtn btn" id="easy">Facile</button>
+        <button class = "difficultyBtn btn" id="medium">Moyen</button>
+        <button class = "difficultyBtn btn" id="hard">Difficile</button>
+        <button class = "difficultyBtn btn" id="infinity">Infini</button>
+      </div>
+      
+      <div id="updateLvl" hidden>
+        <div id="improvements">
+          <h2>Niveau supérieur !</h2>
+          <h3>Amélioration de la tourelle</h3>
+          <div id="improveFireRate" class="improvement">Augmenter la vitesse de tir</div>
+          <div id="improveAtk" class="improvement">Augmenter l'attaque</div>
+          <div id="improvePenetration" class="improvement">Augmenter la pénétration des balles</div>
+          <div id="addBullet" class="improvement"> Tirer une balle de plus</div>
+        </div>
+      </div>
+      
+      <div id="lose">
+        <h1>Vous avez perdu</h1>
+        <button class = "btn" id="returnMenu">Retour au menu</button>
+      </div>
+      
+      <div id="win">
+        <h1>Vous avez gagné la partie, bravo ! </h1>
+        <button class = "btn" id="returnMenuWin">Retour au menu</button>
+      </div>
+      
+      <div id="parameters"> 
+        <button id="retour" class = "btn">Retour</button>
+        <h2 id="volume">Volume de la musique</h2>
+      </div>
+    </main>
+    
+    <footer id="footer">By Thimea Holleville et Guillaume Panighetti</footer>
+    <script src="Utils.js"></script>
+     <script src="Raindrop.js"></script>
+    <script src="Game.js"></script>
+    <script src="Tower.js"></script>
+    <script src="sketch.js"></script>
+    <script src="Enemy.js"></script>
+    <script src="Tank.js"></script>
+    <script src="Bullet.js"></script>
+  </body>
+</html>
